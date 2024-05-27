@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop manager</title>
+
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+	<main class="product-menu">
+		<div class="product-menu-panel">
+			<!-- <div class="product-adder"> -->
+				<form action="" class="product-adder-form">
+					<input type="text" id="input-product-name" placeholder=" Назва товару" required/>
+					<button class = "button-add tooltip" type="submit" data-tooltip="add">Додати</button>							
+					
+				</form>
+			<!-- </div> -->
+			<ul class="product-list">
+				<li class="product-list-entry">
+					<form action="" class="product-list-entry-form" id="product-list-entry-form">
+						<div class="list-pr-name-container">
+							<label id="list-pr-name-not-bought" for="product-list-entry-form">Помідори</label>
+						</div>
+						<div class = "quantity-settings">
+							<button class = "button tooltip" id="button-" type="button" data-tooltip="minus">-</button>
+							<input id="list-pr-count" type="text" value="2" required/>
+							<button class = "button tooltip" id="button-p" type="button" data-tooltip="plus">+</button>
+						</div>
+						<div class="list-pr-accept">
+							<button class = "button tooltip" id="list-pr-not-bought" type="submit" data-tooltip="i am a tooltip">Не куплено</button>				
+						</div>	
+					</form>
+				</li>
+				<li class="product-list-entry">
+					<form action="" class="product-list-entry-form" id="product-list-entry-form">
+						<div class="list-pr-name-container">
+							<label id="list-pr-name" for="product-list-entry-form">Печиво</label>
+						</div>
+						<div class = "quantity-settings">
+							<button class = "button tooltip" id="button-" type="button" data-tooltip="minus">-</button>
+							<input id="list-pr-count" type="text" value="2" required/>
+							<button class = "button tooltip" id="button-p" type="button" data-tooltip="plus">+</button>
+						</div>
+						<div class="list-pr-accept">
+							<button class = "button tooltip" id="list-pr-buy" type="submit" data-tooltip="i am a tooltip">Куплено</button>	
+							<button class = "button tooltip" id="button-x" type="button"data-tooltip="i am a tooltip">x</button>				
+						</div>		
+					</form>
+				</li>
+				<li class="product-list-entry">
+						<form action="" class="product-list-entry-form" id="product-list-entry-form">
+							<div class="list-pr-name-container">
+								<input id="list-pr-name" for="product-list-entry-form" type="text" value="Сир" required/>
+							</div>
+							<div class = "quantity-settings">
+								<button class = "button tooltip" id="inactive-button-" type="button" data-tooltip="minus">-</button>
+								<input id="list-pr-count" type="text" value="1" required/>
+								<button class = "button tooltip" id="button-p" type="button" data-tooltip="plus">+</button>
+							</div>
+							<div class="list-pr-accept">
+								<button class = "button tooltip" id="list-pr-buy" type="submit"data-tooltip="i am a tooltip">Куплено</button>	
+								<button class = "button tooltip" id="button-x" type="button"data-tooltip="i am a tooltip">x</button>				
+							</div>				
+						</form>
+				</li>
+			</ul>
+		</div>
+		<div class="product-menu-panel" id="second-panel">
+			
+				<div class="second-panel-section" id="first-entry">
+					Куплено
+				</div>
+				<div class="second-panel-section">
+					<div class="product-item">
+						<span>Печиво
+							<span class="amount">2</span>
+						</span>
+					</div>
+					<div class="product-item">
+						<span>Сир
+							<span class="amount">1</span>
+						</span>
+					</div>
+				</div>
+				<div class="second-panel-section">
+					Не куплено
+				</div>
+				<div class="second-panel-section">
+					<div class="product-item">
+						<span>Помідори
+							<span class="amount">2</span>
+						</span>
+					</div>
+				</div>
+		</div>
+	</div>
+	<footer class="bage">
+		<p class="buy-list">Buy list</p>
+		<p class="name">Rublevskyi O</p>
+	</div>
+</body>
+</html>
